@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Abdaal - Learn. Work. Live Better.</title>
+    <link rel="icon" href="images/ali-about-266x300.webp" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+   <!-- Navbar -->
+<header class="sticky top-0 z-50 bg-white/70 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Brand Name -->
+      <h1 class="text-2xl font-bold">Ali Abdaal</h1>
+  
+      <!-- Desktop Navbar Links -->
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:text-teal-600">Home</a>
+        <a href="#" class="hover:text-teal-600">Blog</a>
+        <a href="#" class="hover:text-teal-600">Videos</a>
+        <a href="#" class="hover:text-teal-600">Podcast</a>
+        <a href="#" class="hover:text-teal-600">Courses</a>
+        <a href="#" class="hover:text-teal-600">Newsletter</a>
+        <a href="#" class="hover:text-teal-600">About</a>
+      </nav>
+  
+      <!-- Mobile Hamburger Menu -->
+      <div class="md:hidden flex items-center">
+        <button id="hamburger" class="text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i> <!-- You can use an icon or a text symbol for the hamburger menu -->
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Navbar Links (Initially Hidden) -->
+    <nav id="mobile-menu" class="md:hidden bg-white shadow-md hidden space-y-4 py-4 px-6">
+      <a href="#" class="block text-lg hover:text-teal-600">Home</a>
+      <a href="#" class="block text-lg hover:text-teal-600">Blog</a>
+      <a href="#" class="block text-lg hover:text-teal-600">Videos</a>
+      <a href="#" class="block text-lg hover:text-teal-600">Podcast</a>
+      <a href="#" class="block text-lg hover:text-teal-600">Courses</a>
+      <a href="#" class="block text-lg hover:text-teal-600">Newsletter</a>
+      <a href="#" class="block text-lg hover:text-teal-600">About</a>
+    </nav>
+  </header>
+  
+  <!-- JavaScript for toggling the mobile menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+  
+
+   <!-- Hero Section -->
+<section class="relative overflow-hidden text-center py-16 sm:py-24 px-6 bg-gradient-to-br from-white via-gray-50 to-gray-100">
+    <div class="max-w-4xl mx-auto">
+      <!-- Title -->
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-gray-900">
+        Learn. Work. Live Better.
+      </h2>
+  
+      <!-- Description -->
+      <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Actionable strategies for a happier, more productive life — straight from years of trial and insight.
+      </p>
+  
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="bg-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-700 transition-all shadow-lg">
+          Join the Newsletter
+        </a>
+        <a href="#" class="border-2 border-teal-600 text-teal-600 px-8 py-3 rounded-full font-semibold hover:bg-teal-50 transition-all shadow">
+          Watch on YouTube
+        </a>
+      </div>
+    </div>
+  
+    <!-- Decorative Shapes -->
+    <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-teal-100 rounded-full blur-3xl opacity-50 hidden sm:block"></div>
+    <div class="absolute -top-16 -left-16 w-64 h-64 bg-yellow-100 rounded-full blur-3xl opacity-50 hidden sm:block"></div>
+  </section>
+  
+
+
+
+ <!-- Blog Section -->
+<section class="max-w-7xl mx-auto py-20 px-6 bg-gradient-to-bl from-gray-50 to-white">
+    <h3 class="text-4xl font-bold text-center text-gray-800 mb-12"> ✍️ Latest Blog Posts</h3>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <img src="images/study-effective-ali.jpg" alt="How to Study Effectively" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3 text-gray-800">How to Study Effectively</h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Discover science-backed study techniques that improve retention, focus, and academic performance. Ideal for students, professionals, and lifelong learners alike.</p>
+          <a href="#" class="text-teal-600 font-medium hover:underline">Learn more &rarr;</a>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <img src="images/productivity-desk-setup.jpg" alt="My Productivity Setup" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3 text-gray-800">My Productivity Setup</h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Take a deep dive into my favorite productivity tools, apps, and systems that help streamline my workflow and maximize output.</p>
+          <a href="#" class="text-teal-600 font-medium hover:underline">Learn more &rarr;</a>
+        </div>
+      </div>
+  
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <img src="images/work-life-ali.jpg" alt="Work-Life Balance" class="w-full h-52 object-cover">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-3 text-gray-800">Work-Life Balance</h4>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Explore strategies to maintain healthy boundaries, reduce stress, and bring joy back into your everyday routine without sacrificing growth.</p>
+          <a href="#" class="text-teal-600 font-medium hover:underline">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Section -->
+<section class="bg-gradient-to-br from-white to-gray-50 py-24 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <!-- Image -->
+      <div class="flex-shrink-0 w-full md:w-1/2">
+        <img src="images/ali-abdaal-author-feel-good-productivity-book.webp" alt="Ali Abdaal" class="w-full h-auto rounded-2xl shadow-lg">
+      </div>
+  
+      <!-- Content -->
+      <div class="w-full md:w-1/2">
+        <h3 class="text-4xl font-bold mb-4 text-gray-800">About Ali Abdaal</h3>
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          Ali Abdaal is a former doctor turned YouTuber, entrepreneur, and teacher. Through his content, he shares insights on productivity, learning, happiness, and building a life that’s both meaningful and fulfilling. With millions of subscribers and readers worldwide, Ali empowers others with practical advice and evidence-based strategies to live better and work smarter.
+        </p>
+        <a href="#" class="inline-block mt-2 text-teal-600 font-semibold hover:underline">Learn more about Ali &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Book Section -->
+<section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+
+      
+      <!-- Book Content -->
+      <div class="lg:flex items-center justify-center space-x-8">
+        <!-- Book Image -->
+        <div class="lg:w-1/3 mb-8 lg:mb-0">
+          <img src="images/feel-good-productivity-book-ali-abdaal.webp" alt="Book Cover" class="rounded-xl shadow-lg mx-auto" />
+        </div>
+        
+        <!-- Book Details -->
+        <div class="lg:w-2/3">
+            <h3 class="text-3xl font-semibold text-gray-800 mb-8 text-left">Ali Abdaal's Book</h3>
+          <p class="text-lg text-left text-gray-700 mb-6">
+            "The Productivity Project" by Ali Abdaal is your guide to mastering the art of productivity, leveraging modern strategies to help you get more done with less stress. It offers practical tips, time-management techniques, and actionable advice that will help you work smarter, not harder. Whether you're a student, a professional, or someone trying to improve your life, this book will inspire and empower you to reach your full potential.
+          </p>
+          
+          <a href="#" class="bg-teal-600 text-left text-white py-3 px-8 rounded-xl text-xl font-semibold hover:bg-teal-700 transition block sm:w-1/2 lg:w-1/3 ml-0">
+            Get Your Copy Now
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- YouTube Videos Preview Section -->
+<section class="bg-white py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-4xl font-bold text-center text-gray-800 mb-12">🎥 Recent YouTube Videos</h3>
+      <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  
+        <!-- Video Card 1 -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/MPECDuOUBEY?si=_Y3o2WxI3xG4EpEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+            <h4 class="text-white font-semibold text-lg">10 Productivity Hacks That Actually Work</h4>
+            <div class="text-sm text-gray-300 flex justify-between mt-1">
+              <span>🔁 100K+ views</span>
+              <span>⏱ 15:46</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Video Card 2 -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/jP1uwBcpUeE?si=WNO42rWQ1SDRaQiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+            <h4 class="text-white font-semibold text-lg">My Morning Routine as a Creator</h4>
+            <div class="text-sm text-gray-300 flex justify-between mt-1">
+              <span>🔁 60K+ views</span>
+              <span>⏱ 19:12</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Video Card 3 -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/w0zO6Jgjw6U?si=CLT7Fz0BlmpqMiDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+            <h4 class="text-white font-semibold text-lg">Books That Changed My Life</h4>
+            <div class="text-sm text-gray-300 flex justify-between mt-1">
+              <span>🔁 40K+ views</span>
+              <span>⏱ 44:42</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Courses Section with Image -->
+<section class="bg-gray-50 py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-4xl font-bold text-center text-gray-800 mb-12">🎓 Courses</h3>
+      
+      <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+  
+        <!-- Course Card 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
+          <img src="images/ali-abdaal-part-time-youtuber-academy-logo.png" alt="Part-Time YouTuber Academy" class="w-full h-48 object-cover">
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-900 mb-2">Part-Time YouTuber Academy</h4>
+              <p class="text-gray-600 text-base mb-4">
+                Learn to build a thriving YouTube channel around your lifestyle, without burning out.
+              </p>
+            </div>
+            <a href="#" class="mt-auto inline-block bg-teal-600 text-white text-sm font-medium px-6 py-3 rounded-xl hover:bg-teal-700 transition text-center">
+              Enroll Now
+            </a>
+          </div>
+        </div>
+  
+        <!-- Course Card 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
+          <img src="images/lifeos-ali-abdaal-products-section-1.webp" alt="Productivity Masterclass" class="w-full h-48 object-cover">
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-900 mb-2">LifeOS</h4>
+              <p class="text-gray-600 text-base mb-4">
+                The complete productivity system to help you manage your time, beat procrastination, and take consistent action towards your goals.
+              </p>
+            </div>
+            <a href="#" class="mt-auto inline-block bg-teal-600 text-white text-sm font-medium px-6 py-3 rounded-xl hover:bg-teal-700 transition text-center">
+              Enroll Now
+            </a>
+          </div>
+        </div>
+  
+        <!-- Course Card 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all flex flex-col">
+          <img src="images/study-for-exams-ali.jpg" alt="How to Study for Exams" class="w-full h-48 object-cover">
+          <div class="p-6 flex flex-col justify-between flex-grow">
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-900 mb-2">How to Study for Exams</h4>
+              <p class="text-gray-600 text-base mb-4">
+                Ace your exams using active recall, spaced repetition, and proven memory techniques.
+              </p>
+            </div>
+            <a href="#" class="mt-auto inline-block bg-teal-600 text-white text-sm font-medium px-6 py-3 rounded-xl hover:bg-teal-700 transition text-center">
+              Enroll Now
+            </a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Deep Dive Podcast Section -->
+<section class="bg-gray-50 py-24 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-gray-800 mb-12">🎙️ Deep Dive Podcast</h3>
+      
+      <!-- Tabs for Featured and Recent Episodes -->
+      <div class="mb-8">
+        <div class="tabs flex justify-center space-x-8 text-gray-600 text-lg">
+          <button class="tab active text-teal-600 font-semibold hover:text-teal-800 transition">Featured Episodes</button>
+          <button class="tab text-gray-600 hover:text-teal-600 transition">Recent Episodes</button>
+        </div>
+      </div>
+      
+      <!-- Featured Episodes List -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+        
+        <!-- Episode 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all max-w-xs">
+          <div class="mb-4">
+            <iframe src="https://open.spotify.com/embed/episode/episodeID1" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h4 class="text-xl text-left font-semibold text-gray-900 mb-2">The Power of Focus</h4>
+          <p class="text-gray-600 text-left text-sm mb-4">Learn how to optimize your focus and make the most of your time.</p>
+  
+          <!-- Tags and Sharing buttons -->
+          <div class="flex justify-between items-center text-sm text-gray-600">
+            <span class="bg-teal-100 text-teal-600 px-2 py-1 rounded-full">Productivity</span>
+            <div class="flex space-x-2">
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M12 3v18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Episode 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all max-w-xs">
+          <div class="mb-4">
+            <iframe src="https://open.spotify.com/embed/episode/episodeID2" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h4 class="text-xl text-left font-semibold text-gray-900 mb-2">Maximizing Productivity</h4>
+          <p class="text-gray-600 text-left text-sm mb-4">Explore methods for boosting productivity without burning out.</p>
+  
+          <!-- Tags and Sharing buttons -->
+          <div class="flex justify-between items-center text-sm text-gray-600">
+            <span class="bg-teal-100 text-teal-600 px-2 py-1 rounded-full">Efficiency</span>
+            <div class="flex space-x-2">
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M12 3v18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Episode 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all max-w-xs">
+          <div class="mb-4">
+            <iframe src="https://open.spotify.com/embed/episode/episodeID3" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h4 class="text-xl text-left font-semibold text-gray-900 mb-2">Building Healthy Habits</h4>
+          <p class="text-gray-600 text-left text-sm mb-4">Tips for creating lasting habits that enhance your life.</p>
+  
+          <!-- Tags and Sharing buttons -->
+          <div class="flex justify-between items-center text-sm text-gray-600">
+            <span class="bg-teal-100 text-teal-600 px-2 py-1 rounded-full">Health</span>
+            <div class="flex space-x-2">
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#" class="text-teal-600 hover:text-teal-800 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M12 3v18" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Button to View All Episodes -->
+      <div class="mt-8">
+        <a href="#" class="bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-700 transition">View All Episodes</a>
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- Newsletter Signup Section -->
+<section class="bg-gradient-to-br from-teal-100 to-teal-50 py-24 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <!-- Quote Section -->
+      <blockquote class="mb-12 text-2xl sm:text-3xl font-semibold italic text-gray-800 max-w-3xl mx-auto">
+        "Join 200,000+ readers learning how to live better every week."
+      </blockquote>
+  
+      <!-- Newsletter Signup Form -->
+      <div class="bg-white p-8 sm:p-12 rounded-3xl shadow-xl mx-auto max-w-4xl">
+        <h3 class="text-3xl font-semibold mb-4 text-gray-900">Get Inspired, Get Better</h3>
+        <p class="text-lg text-gray-600 mb-6">Sign up for our newsletter and get actionable insights to improve your life every week.</p>
+  
+        <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <input type="email" placeholder="Enter your email" required
+            class="w-full sm:w-[400px] px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500 placeholder-gray-500 text-lg">
+          <button type="submit"
+            class="bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-teal-700 transition-all w-full sm:w-auto">
+            Subscribe Now
+          </button>
+        </form>
+      </div>
+  
+      <!-- Testimonials Section -->
+      <div class="mt-20">
+        <h3 class="text-3xl font-semibold text-gray-800 mb-10">What Our Readers Say</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+  
+          <!-- Testimonial Card 1 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+            <div class="flex items-center mb-4 space-x-4">
+              <img src="images/steven-bartlett-feel-good-productivity-ali-abdaal-review.webp"
+                alt="Steven Bartlett" class="w-14 h-14 object-cover rounded-full">
+              <div class="text-left">
+                <p class="font-semibold text-gray-900">Steven Bartlett</p>
+                <p class="text-sm text-gray-500">BBC’s Dragon’s Den & Host of The Diary of a CEO</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-left">Ali is the master of productivity. Nobody distills complicated ideas into fun, accessible and actionable insights quite like him.</p>
+          </div>
+  
+          <!-- Testimonial Card 2 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+            <div class="flex items-center mb-4 space-x-4">
+              <img src="images/cal-newport-feel-good-productivity-review-ali-abdaal.webp"
+                alt="Cal Newport" class="w-14 h-14 object-cover rounded-full">
+              <div class="text-left">
+                <p class="font-semibold text-gray-900">Cal Newport</p>
+                <p class="text-sm text-gray-500">Author of Deep Work & Professor</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-left">Ali flips the narrative on productivity — it’s not about systems, but cultivating deeper energy for your work. Truly transformative.</p>
+          </div>
+  
+          <!-- Testimonial Card 3 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+            <div class="flex items-center mb-4 space-x-4">
+              <img src="images/Anne-Laure-Le-Cunff-feel-good-productivity-review-ali-abdaal.webp"
+                alt="Anne-Laure Le Cunff" class="w-14 h-14 object-cover rounded-full">
+              <div class="text-left">
+                <p class="font-semibold text-gray-900">Anne-Laure Le Cunff</p>
+                <p class="text-sm text-gray-500">Educator, Writer & Researcher</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-left">Ali brings a joyful, science-backed and real-world guide to productivity. Honest, insightful and highly readable.</p>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Featured In Section -->
+<section class="bg-gray-50 py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-gray-800 mb-12">🏅 Featured In</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12">
+        
+        <!-- Logo 1 -->
+        <div class="flex justify-center items-center transition-transform transform hover:scale-105">
+          <img src="images/radio-ali.webp" alt="Logo 1" class="max-w-full max-h-16 object-contain">
+        </div>
+  
+        <!-- Logo 2 -->
+        <div class="flex justify-center items-center transition-transform transform hover:scale-105">
+          <img src="images/good-morning-america-logo-ali.webp" alt="Logo 2" class="max-w-full max-h-16 object-contain">
+        </div>
+  
+        <!-- Logo 3 -->
+        <div class="flex justify-center items-center transition-transform transform hover:scale-105">
+          <img src="images/financial-times-ali.webp" alt="Logo 3" class="max-w-full max-h-16 object-contain">
+        </div>
+  
+        <!-- Logo 4 -->
+        <div class="flex justify-center items-center transition-transform transform hover:scale-105">
+          <img src="images/business-ali.webp" alt="Logo 4" class="max-w-full max-h-16 object-contain">
+        </div>
+  
+        <!-- Logo 5 -->
+        <div class="flex justify-center items-center transition-transform transform hover:scale-105">
+          <img src="images/new_york_times-ali.webp" alt="Logo 5" class="max-w-full max-h-16 object-contain">
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+   <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-12">
+        
+        <!-- About Section -->
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">About Ali Abdaal</h4>
+          <p class="text-gray-400 text-lg">
+            Doctor turned YouTuber. Sharing strategies on productivity, health, wealth, and happiness to help others lead better lives.
+          </p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-gray-400 hover:text-teal-400 transition">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-teal-400 transition">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-teal-400 transition">Courses</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-teal-400 transition">Podcast</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-teal-400 transition">Newsletter</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Links Section -->
+        <div>
+          <h4 class="text-2xl font-semibold mb-4">Connect With Me</h4>
+          <div class="flex space-x-6">
+            <a href="https://www.facebook.com/aliabdaal" class="text-gray-400 hover:text-teal-400 transition">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/aliabdaal" class="text-gray-400 hover:text-teal-400 transition">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/aliabdaal" class="text-gray-400 hover:text-teal-400 transition">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCoOae5nYA7VqaXzerajD0lg" class="text-gray-400 hover:text-teal-400 transition">
+              <i class="fab fa-youtube fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ali-abdaal" class="text-gray-400 hover:text-teal-400 transition">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/@aliabdaal" class="text-gray-400 hover:text-teal-400 transition">
+                <i class="fab fa-tiktok fa-2x"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom Section -->
+      <div class="mt-16 border-t border-gray-700 pt-8 text-center">
+        <p class="text-gray-400 text-sm">
+          &copy; 2025 Ali Abdaal. All rights reserved. | <a href="#" class="text-teal-400 hover:text-teal-500 transition">Privacy Policy</a> | <a href="#" class="text-teal-400 hover:text-teal-500 transition">Terms & Conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+</html>
